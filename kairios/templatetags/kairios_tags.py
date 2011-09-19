@@ -18,11 +18,13 @@ def delta(year, month, d):
 
 
 @register.inclusion_tag("kairios/calendar.html")
-def calendar(events, **kwargs):
+def calendar(events, date=None, **kwargs):
     cal.setfirstweekday(cal.SUNDAY)
     
     today = datetime.date.today()
-    date = kwargs.pop("date", today)
+    
+    if date is None:
+        date = today
     
     plus_year, plus_month = delta(date.year, date.month, 1)
     minus_year, minus_month = delta(date.year, date.month, -1)
