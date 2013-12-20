@@ -43,9 +43,9 @@ def calendar(events, date=None, **kwargs):
         for day in week:
             is_today = date.year == today.year and date.month == today.month and today.day == day
             if day:
-                has_event = day in events_by_day
-                link = events.day_url(date.year, date.month, day, has_event)
-                row.append((day, has_event, link, is_today))
+                events = events_by_day.get(day, [])
+                link = events.day_url(date.year, date.month, day, bool(events))
+                row.append((day, events, link, is_today))
             else:
                 row.append(None)
         grid.append(row)
