@@ -41,10 +41,7 @@ def calendar(events, date=None, **kwargs):
     for week in matrix:
         row = []
         for day in week:
-            if date.year == today.year and date.month == today.month and today.day == day:
-                is_today = True
-            else:
-                is_today = False
+            is_today = date.year == today.year and date.month == today.month and today.day == day
             if day:
                 has_event = day in events_by_day
                 link = events.day_url(date.year, date.month, day, has_event)
