@@ -17,8 +17,8 @@ def delta(year, month, d):
    return yy, mm
 
 
-@register.inclusion_tag("kairios/calendar.html")
-def calendar(events, date=None, **kwargs):
+@register.inclusion_tag("kairios/calendar.html", takes_context=True)
+def calendar(context, events, date=None, **kwargs):
     cal.setfirstweekday(cal.SUNDAY)
     
     today = datetime.date.today()
@@ -50,9 +50,10 @@ def calendar(events, date=None, **kwargs):
                 row.append(None)
         grid.append(row)
     
-    return {
+    context.update({
         "title": title,
         "prev": prev,
         "next": next,
         "grid": grid,
-    }
+    })
+    return context
