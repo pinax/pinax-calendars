@@ -52,6 +52,7 @@ def calendar(context, events, date=None, **kwargs):
     
     context.update({
         "title": title,
+        "calendar_date": date,
         "prev": prev,
         "next": next,
         "grid": grid,
