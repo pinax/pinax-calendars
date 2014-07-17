@@ -1,6 +1,21 @@
 kairios
 =======
 
+.. image:: https://img.shields.io/travis/eldarion/kairios.svg
+    :target: https://travis-ci.org/eldarion/kairios
+
+.. image:: https://img.shields.io/coveralls/eldarion/kairios.svg
+    :target: https://coveralls.io/r/eldarion/kairios
+
+.. image:: https://img.shields.io/pypi/dm/kairios.svg
+    :target:  https://pypi.python.org/pypi/kairios/
+
+.. image:: https://img.shields.io/pypi/v/kairios.svg
+    :target:  https://pypi.python.org/pypi/kairios/
+
+.. image:: https://img.shields.io/badge/license-BSD-blue.svg
+    :target:  https://pypi.python.org/pypi/kairios/
+
 Provides utilities for publishing events as a calendar.
 
 At the moment, it just provides a visual calendar (both large and small)
