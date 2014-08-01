@@ -8,13 +8,13 @@ register = template.Library()
 
 
 def delta(year, month, d):
-   mm = month + d
-   yy = year
-   if mm > 12:
-       mm, yy = mm % 12, year + mm / 12
-   elif mm < 1:
-       mm, yy = 12 + mm, year - 1
-   return yy, mm
+    mm = month + d
+    yy = year
+    if mm > 12:
+        mm, yy = mm % 12, year + mm / 12
+    elif mm < 1:
+        mm, yy = 12 + mm, year - 1
+    return yy, mm
 
 
 @register.inclusion_tag("kairios/calendar.html", takes_context=True)
