@@ -28,9 +28,9 @@ Usage
 ::
 
     {% load kairios_tags %}
-    
+
     ...
-    
+
     {% calendar events %}
 
 
