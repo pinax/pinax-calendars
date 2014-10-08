@@ -2,7 +2,7 @@ import calendar as cal
 import datetime
 
 from django import template
-from django.util import timezone
+from django.utils import timezone
 
 import pytz
 
