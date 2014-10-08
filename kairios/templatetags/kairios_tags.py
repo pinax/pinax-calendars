@@ -2,7 +2,9 @@ import calendar as cal
 import datetime
 
 from django import template
+from django.util import timezone
 
+import pytz
 
 register = template.Library()
 
@@ -18,10 +20,13 @@ def delta(year, month, d):
 
 
 @register.inclusion_tag("kairios/calendar.html", takes_context=True)
-def calendar(context, events, date=None, **kwargs):
+def calendar(context, events, date=None, tz=None, **kwargs):
     cal.setfirstweekday(cal.SUNDAY)
 
-    today = datetime.date.today()
+    if tz:
+        today = timezone.localtime(timezone.now(), pytz.timezone(tz)).date()
+    else:
+        today = datetime.date.today()
 
     if date is None:
         date = today
