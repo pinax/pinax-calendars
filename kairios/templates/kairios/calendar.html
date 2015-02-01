@@ -1,0 +1,52 @@
+{% load i18n %}
+
+<div class="calendar">
+  <div class="calendar-heading">
+    <h3 class="calendar-title">{{ title }}</h3>
+
+    <div class="calendar-nav">
+      {% if prev %}
+        <a href="{{ prev }}">{% trans "Previous month" %}</a>
+      {% endif %}
+
+      <span class="calendar-date">{{ calendar_date|date:'m.Y' }}</span>
+
+      {% if next %}
+        <a href="{{ next }}">{% trans "Next month" %}</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="calendar-body">
+    <table class="calendar-table">
+      {% for row in grid %}
+      <tr>
+        {% for day in row %}
+          {% if not day %}
+            <td class="day noday"></td>
+          {% else %}
+            {% with day_day=day.0 day_events=day.1 link=day.2 is_today=day.3 %}
+            <td class="day {% if day.1 %}day-has-events{% else %}day-no-events{% endif %}">
+              {% if link %}
+                <a href="{{ link }}" class="day-number">{{ day_day }}</a>
+              {% else %}
+                <span class="day-number">{{ day_day }}</span>
+              {% endif %}
+              {% if day_events %}
+                <div class="day-event-list">
+                  {% for event in day_events %}
+                    <div class="day-event">
+                      {{ event }}
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </td>
+            {% endwith %}
+          {% endif %}
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
