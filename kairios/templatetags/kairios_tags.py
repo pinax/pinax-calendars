@@ -34,10 +34,10 @@ def calendar(context, events, date=None, tz=None, **kwargs):
     plus_year, plus_month = delta(date.year, date.month, 1)
     minus_year, minus_month = delta(date.year, date.month, -1)
 
-    next = events.month_url(plus_year, plus_month)
-    prev = events.month_url(minus_year, minus_month)
+    next = events.month_url(plus_year, plus_month, **kwargs)
+    prev = events.month_url(minus_year, minus_month, **kwargs)
 
-    events_by_day = events.events_by_day(date.year, date.month)
+    events_by_day = events.events_by_day(date.year, date.month, **kwargs)
 
     title = "%s %s" % (cal.month_name[date.month], date.year)
 
@@ -49,7 +49,8 @@ def calendar(context, events, date=None, tz=None, **kwargs):
             is_today = date.year == today.year and date.month == today.month and today.day == day
             if day:
                 day_events = events_by_day.get(day, [])
-                link = events.day_url(date.year, date.month, day, bool(day_events))
+                link = events.day_url(date.year, date.month,
+                                      day, bool(day_events), **kwargs)
                 row.append((day, day_events, link, is_today))
             else:
                 row.append(None)
