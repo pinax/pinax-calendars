@@ -1,0 +1,7 @@
+[run]
+source = pinax
+omit = pinax/calendars/tests/*,pinax/calendars/admin.py
+branch = 1
+
+[report]
+omit = pinax/calendars/tests/*,pinax/calendars/admin.py

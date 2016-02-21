@@ -1,2 +1,5 @@
+include AUTHORS
+include LICENSE
 include README.rst
-recursive-include kairios/templates *.html
+recursive-include pinax/calendars/static *
+recursive-include pinax/calendars/templates *

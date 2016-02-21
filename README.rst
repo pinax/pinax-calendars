@@ -1,20 +1,23 @@
-kairios
+pinax-calendars
 =======
 
-.. image:: https://img.shields.io/travis/eldarion/kairios.svg
-    :target: https://travis-ci.org/eldarion/kairios
+.. image:: http://slack.pinaxproject.com/badge.svg
+    :target: http://slack.pinaxproject.com/
 
-.. image:: https://img.shields.io/coveralls/eldarion/kairios.svg
-    :target: https://coveralls.io/r/eldarion/kairios
+.. image:: https://img.shields.io/travis/pinax/pinax-calendars.svg
+    :target: https://travis-ci.org/pinax/pinax-calendars
 
-.. image:: https://img.shields.io/pypi/dm/kairios.svg
-    :target:  https://pypi.python.org/pypi/kairios/
+.. image:: https://img.shields.io/coveralls/pinax/pinax-calendars.svg
+    :target: https://coveralls.io/r/pinax/pinax-calendars
 
-.. image:: https://img.shields.io/pypi/v/kairios.svg
-    :target:  https://pypi.python.org/pypi/kairios/
+.. image:: https://img.shields.io/pypi/dm/pinax-calendars.svg
+    :target:  https://pypi.python.org/pypi/pinax-calendars/
 
-.. image:: https://img.shields.io/badge/license-BSD-blue.svg
-    :target:  https://pypi.python.org/pypi/kairios/
+.. image:: https://img.shields.io/pypi/v/pinax-calendars.svg
+    :target:  https://pypi.python.org/pypi/pinax-calendars/
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target:  https://pypi.python.org/pypi/pinax-calendars/
 
 Provides utilities for publishing events as a calendar.
 
@@ -27,7 +30,7 @@ Usage
 
 ::
 
-    {% load kairios_tags %}
+    {% load pinax_calendars_tags %}
 
     ...
 

@@ -19,7 +19,7 @@ def delta(year, month, d):
     return yy, mm
 
 
-@register.inclusion_tag("kairios/calendar.html", takes_context=True)
+@register.inclusion_tag("pinax/calendars/calendar.html", takes_context=True)
 def calendar(context, events, date=None, tz=None, **kwargs):
     cal.setfirstweekday(cal.SUNDAY)
 
