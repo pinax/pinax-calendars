@@ -16,7 +16,7 @@ def delta(year, month, d):
         mm, yy = mm % 12, year + mm / 12
     elif mm < 1:
         mm, yy = 12 + mm, year - 1
-    return yy, mm
+    return int(yy), mm
 
 
 @register.inclusion_tag("pinax/calendars/calendar.html", takes_context=True)
