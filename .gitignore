@@ -10,3 +10,4 @@ MANIFEST
 *.egg
 docs/_build/
 htmlcov/
+__pycache__/
