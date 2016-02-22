@@ -16,7 +16,7 @@ setup(
     description="Django utilities for publishing events as a calendar",
     name="pinax-calendars",
     long_description=read("README.rst"),
-    version="0.5",
+    version="0.6",
     url="http://github.com/pinax/pinax-calendars/",
     license="MIT",
     packages=find_packages(),
