@@ -1,4 +1,4 @@
-Piinax Calendars
+Pinax Calendars
 =======
 
 .. image:: http://slack.pinaxproject.com/badge.svg
