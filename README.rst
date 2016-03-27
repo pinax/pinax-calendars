@@ -37,6 +37,9 @@ pinax-calendars
 At the moment, it just provides a visual calendar (both large and small)
 showing which days have events and optionally linking to a day detail page.
 
+There is a [demo project](https://github.com/pinax/pinax-calendars-demo) that
+you can clone and run to see it in action.
+
 
 Usage
 -----
