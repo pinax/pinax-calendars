@@ -1,7 +1,7 @@
 from collections import defaultdict
+import pytz
 
 from django.core.urlresolvers import reverse
-
 
 class EventAdapter(object):
     day_url_name = "daily"
@@ -18,12 +18,13 @@ class EventAdapter(object):
     def month_url(self, year, month, **kwargs):
         return reverse(self.month_url_name, args=[year, month])
 
-    def events_by_day(self, year, month, **kwargs):
+    def events_by_day(self, year, month, tz, **kwargs):
         days = defaultdict(list)
         query_args = {
             "{}__year".format(self.date_field_name): year,
             "{}__month".format(self.date_field_name): month
         }
+        timezone = pytz.timezone(tz) if tz else pytz.utc
         for event in self.events.filter(**query_args).order_by(self.date_field_name):
-            days[getattr(event, self.date_field_name).day].append(event)
+            days[getattr(event, self.date_field_name).astimezone(timezone).day].append(event)
         return days
