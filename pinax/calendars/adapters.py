@@ -3,6 +3,7 @@ import pytz
 
 from django.core.urlresolvers import reverse
 
+
 class EventAdapter(object):
     day_url_name = "daily"
     month_url_name = "monthly"
