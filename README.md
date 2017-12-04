@@ -28,7 +28,7 @@ This app was developed as part of the Pinax ecosystem but is just a Django app a
 At the moment, it just provides a visual calendar (both large and small)
 showing which days have events and optionally linking to a day detail page.
 
-There is a `demo project <https://github.com/pinax/pinax-calendars-demo>`_ that
+There is a `demo project` https://github.com/pinax/pinax-calendars-demo/ that
 you can clone and run to see it in action.
 
 ### Supported Django and Python Versions
@@ -39,7 +39,6 @@ you can clone and run to see it in action.
 
 ## Table of Contents
 
-* [Development](#development)
 * [Quickstart](#quickstart)
 * [Usage](#usage)
 * [Change Log](#change-log)
@@ -48,13 +47,6 @@ you can clone and run to see it in action.
 * [Contributors](#contributors)
 * [Code of Conduct](#code-of-conduct)
 * [Pinax Project Blog and Twitter](#pinax-project-blog-and-twitter)
-
-
-## Development
-
-The source repository can be found at https://github.com/pinax/pinax-calendars/
-and a demo project can be cloned and run locally to see how it all works from
-https://github.com/pinax/pinax-calendars-demo/
 
 
 ## Quickstart
