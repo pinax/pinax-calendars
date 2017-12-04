@@ -31,6 +31,24 @@ showing which days have events and optionally linking to a day detail page.
 There is a `demo project <https://github.com/pinax/pinax-calendars-demo>`_ that
 you can clone and run to see it in action.
 
+### Supported Django and Python Versions
+
+* Django 1.8, 1.10, 1.11, and 2.0
+* Python 2.7, 3.4, 3.5, and 3.6
+
+
+## Table of Contents
+
+* [Development](#development)
+* [Quickstart](#quickstart)
+* [Usage](#usage)
+* [Change Log](#change-log)
+* [Documentation](#documentation)
+* [Contribute](#contribute)
+* [Contributors](#contributors)
+* [Code of Conduct](#code-of-conduct)
+* [Pinax Project Blog and Twitter](#pinax-project-blog-and-twitter)
+
 
 ## Development
 
@@ -244,7 +262,16 @@ This will render a full width monthly calendar with responsive squares for each
 day.
 
 
-## ChangeLog
+## Change Log
+
+### 2.0.0
+
+* Add Django 2.0 compatibility testing
+* Drop Django 1.9 and Python 3.3 support
+* Convert CI and coverage to CircleCi and CodeCov
+* Add PyPi-compatible long description
+* Move documentation to README.md
+
 
 ### 1.1.0
 
@@ -265,11 +292,6 @@ day.
 
 * Donated to Pinax from Eldarion
 * Renamed from `kairios` to `pinax-calendars`
-
-
-## Documentation
-
-The ``pinax-calendars`` documentation can be found at http://pinax-calendars.readthedocs.org/en/latest/. The Pinax documentation is available at http://pinaxproject.com/pinax/. If you would like to help us improve our documentation or write more documentation, please join our Pinax Project Slack team and let us know!
 
 
 ## Contribute
