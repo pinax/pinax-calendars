@@ -6,7 +6,7 @@
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/pinax-calendars/)
 
 [![Codecov](https://img.shields.io/codecov/c/github/pinax/pinax-calendars.svg)](https://codecov.io/gh/pinax/pinax-calendars)
-[![CircleCI](https://circleci.com/gh/pinax/pinax-calendars.svg?style=svg)(https://circleci.com/gh/pinax/pinax-calendars)
+[![CircleCI](https://circleci.com/gh/pinax/pinax-calendars.svg?style=svg)](https://circleci.com/gh/pinax/pinax-calendars)
 ![](https://img.shields.io/github/contributors/pinax/pinax-calendars.svg)
 ![](https://img.shields.io/github/issues-pr/pinax/pinax-calendars.svg)
 ![](https://img.shields.io/github/issues-pr-closed/pinax/pinax-calendars.svg)
