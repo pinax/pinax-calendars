@@ -42,9 +42,7 @@ you can clone and run to see it in action.
 * [Quickstart](#quickstart)
 * [Usage](#usage)
 * [Change Log](#change-log)
-* [Documentation](#documentation)
 * [Contribute](#contribute)
-* [Contributors](#contributors)
 * [Code of Conduct](#code-of-conduct)
 * [Pinax Project Blog and Twitter](#pinax-project-blog-and-twitter)
 
