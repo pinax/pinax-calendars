@@ -1,7 +1,8 @@
 from collections import defaultdict
-import pytz
 
 from django.core.urlresolvers import reverse
+
+import pytz
 
 
 class EventAdapter(object):
