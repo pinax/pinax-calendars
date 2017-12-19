@@ -3,25 +3,38 @@
 # Pinax Calendars
 
 [![](https://img.shields.io/pypi/v/pinax-stripe.svg)](https://pypi.python.org/pypi/pinax-calendars/)
-[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/pinax-calendars/)
 
 [![Codecov](https://img.shields.io/codecov/c/github/pinax/pinax-calendars.svg)](https://codecov.io/gh/pinax/pinax-calendars)
 [![CircleCI](https://circleci.com/gh/pinax/pinax-calendars.svg?style=svg)](https://circleci.com/gh/pinax/pinax-calendars)
 ![](https://img.shields.io/github/contributors/pinax/pinax-calendars.svg)
 ![](https://img.shields.io/github/issues-pr/pinax/pinax-calendars.svg)
 ![](https://img.shields.io/github/issues-pr-closed/pinax/pinax-calendars.svg)
-
+  
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
-        
-## Pinax
+[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates. 
-This collection can be found at http://pinaxproject.com.
+## Table of Contents
 
-This app was developed as part of the Pinax ecosystem but is just a Django app and can be used independently of other Pinax apps.
+* [About Pinax](#about-pinax)
+* [Overview](#overview)
+  * [Features](#features)
+  * [Supported Django and Python versions](#supported-django-and-python-versions)
+* [Documentation](#documentation)
+  * [Usage](#usage)
+* [Change Log](#change-log)
+* [Contribute](#contribute)
+* [Code of Conduct](#code-of-conduct)
+* [Connect with Pinax](#connect-with-pinax)
+* [License](#license)
 
+## About Pinax
+
+Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable
+Django apps, themes, and starter project templates. This collection can be found at http://pinaxproject.com.
 
 ## pinax-calendars
+
+### Overview
 
 ``pinax-calendars``, formerly named `kairios` provides utilities for publishing events as a calendar.
 
@@ -31,23 +44,15 @@ showing which days have events and optionally linking to a day detail page.
 There is a `demo project` https://github.com/pinax/pinax-calendars-demo/ that
 you can clone and run to see it in action.
 
-### Supported Django and Python Versions
+#### Supported Django and Python versions
 
-* Django 1.8, 1.10, 1.11, and 2.0
-* Python 2.7, 3.4, 3.5, and 3.6
-
-
-## Table of Contents
-
-* [Quickstart](#quickstart)
-* [Usage](#usage)
-* [Change Log](#change-log)
-* [Contribute](#contribute)
-* [Code of Conduct](#code-of-conduct)
-* [Pinax Project Blog and Twitter](#pinax-project-blog-and-twitter)
+Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
+--------------- | --- | --- | --- | ---
+1.11 |  *  |  *  |  *  |  *  
+2.0  |     |  *  |  *  |  *
 
 
-## Quickstart
+## Documentation
 
 Install the package:
 
@@ -60,7 +65,6 @@ Add `pinax.calendars` to your `INSTALLED_APPS` setting:
         "pinax.calendars",
     )
     
- 
 ## Usage
 
 Using `pinax-calendars` is a combination of setting up at least view that can
@@ -257,7 +261,7 @@ day.
 ### 2.0.0
 
 * Add Django 2.0 compatibility testing
-* Drop Django 1.9 and Python 3.3 support
+* Drop Django 1.8, 1.9, 1.10 and Python 3.3 support
 * Convert CI and coverage to CircleCi and CodeCov
 * Add PyPi-compatible long description
 * Move documentation to README.md
@@ -286,19 +290,30 @@ day.
 
 ## Contribute
 
-See this blog post http://blog.pinaxproject.com/2016/02/26/recap-february-pinax-hangout/ including a video, or our How to Contribute (http://pinaxproject.com/pinax/how_to_contribute/) section for an overview on how contributing to Pinax works. For concrete contribution ideas, please see our Ways to Contribute/What We Need Help With (http://pinaxproject.com/pinax/ways_to_contribute/) section.
+For an overview on how contributing to Pinax works read this [blog post](http://blog.pinaxproject.com/2016/02/26/recap-february-pinax-hangout/)
+and watch the included video, or read our [How to Contribute](http://pinaxproject.com/pinax/how_to_contribute/) section.
+For concrete contribution ideas, please see our
+[Ways to Contribute/What We Need Help With](http://pinaxproject.com/pinax/ways_to_contribute/) section.
 
-In case of any question we recommend you join our Pinax Slack team (http://slack.pinaxproject.com) and ping us there instead of creating an issue on GitHub. Creating issues on GitHub is of course also valid but we are usually able to help you faster if you ping us in Slack.
+In case of any questions we recommend you join our [Pinax Slack team](http://slack.pinaxproject.com)
+and ping us there instead of creating an issue on GitHub. Creating issues on GitHub is of course
+also valid but we are usually able to help you faster if you ping us in Slack.
 
-We also highly recommend reading our Open Source and Self-Care blog post (http://blog.pinaxproject.com/2016/01/19/open-source-and-self-care/).  
-
+We also highly recommend reading our blog post on [Open Source and Self-Care](http://blog.pinaxproject.com/2016/01/19/open-source-and-self-care/).
 
 ## Code of Conduct
 
-In order to foster a kind, inclusive, and harassment-free community, the Pinax Project has a code of conduct, which can be found here  http://pinaxproject.com/pinax/code_of_conduct/. 
+In order to foster a kind, inclusive, and harassment-free community, the Pinax Project
+has a [code of conduct](http://pinaxproject.com/pinax/code_of_conduct/).
 We ask you to treat everyone as a smart human programmer that shares an interest in Python, Django, and Pinax with you.
 
 
-## Pinax Project Blog and Twitter
+## Connect with Pinax
 
-For updates and news regarding the Pinax Project, please follow us on Twitter at @pinaxproject and check out our blog http://blog.pinaxproject.com.
+For updates and news regarding the Pinax Project, please follow us on Twitter [@pinaxproject](https://twitter.com/pinaxproject)
+and check out our [Pinax Project blog](http://blog.pinaxproject.com).
+
+
+## License
+
+Copyright (c) 2012-2018 James Tauber and contributors under the [MIT license](https://opensource.org/licenses/MIT).
