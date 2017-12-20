@@ -258,6 +258,10 @@ day.
 
 ## Change Log
 
+### 2.0.1
+
+* fix setup.py LONG_DESCRIPTION for PyPi
+
 ### 2.0.0
 
 * Add Django 2.0 compatibility testing
