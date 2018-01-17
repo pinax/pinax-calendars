@@ -15,7 +15,6 @@ DEFAULT_SETTINGS = dict(
         "pinax.calendars",
         "pinax.calendars.tests"
     ],
-    MIDDLEWARE_CLASSES=[],
     DATABASES={
         "default": {
             "ENGINE": "django.db.backends.sqlite3",

@@ -56,15 +56,19 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 Install the package:
 
-    pip install pinax-calendars
+```commandline
+    $ pip install pinax-calendars
+```
 
 Add `pinax.calendars` to your `INSTALLED_APPS` setting:
 
-    INSTALLED_APPS = (
+```python
+    INSTALLED_APPS = [
         # other apps
         "pinax.calendars",
-    )
-    
+    ]
+```
+
 ## Usage
 
 Using `pinax-calendars` is a combination of setting up at least view that can
@@ -192,7 +196,7 @@ that timezone for the purposes of displaying the current month.
 
 Example:
 
-```
+```djangotemplate
 {% load pinax_calendars_tags %}
 
 {% block body %}
@@ -257,6 +261,13 @@ day.
 
 
 ## Change Log
+
+### 2.0.2
+
+* Update requirements, add django>=1.11
+* Update sorting config
+* Update documentation
+* Remove doc build
 
 ### 2.0.1
 

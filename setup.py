@@ -1,5 +1,6 @@
 from setuptools import find_packages, setup
 
+VERSION = "2.0.2"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-calendars.svg
     :target: https://pypi.python.org/pypi/pinax-calendars/
@@ -54,7 +55,7 @@ setup(
     description="Django utilities for publishing events as a calendar",
     name="pinax-calendars",
     long_description=LONG_DESCRIPTION,
-    version="2.0.1",
+    version=VERSION,
     url="http://github.com/pinax/pinax-calendars/",
     license="MIT",
     packages=find_packages(),
@@ -64,7 +65,8 @@ setup(
         ]
     },
     install_requires=[
-        "pytz"
+        "django>=1.11",
+        "pytz",
     ],
     test_suite="runtests.runtests",
     tests_require=[
