@@ -2,7 +2,7 @@
 
 # Pinax Calendars
 
-[![](https://img.shields.io/pypi/v/pinax-stripe.svg)](https://pypi.python.org/pypi/pinax-calendars/)
+[![](https://img.shields.io/pypi/v/pinax-calendars.svg)](https://pypi.python.org/pypi/pinax-calendars/)
 
 [![CircleCI](https://img.shields.io/circleci/project/github/pinax/pinax-calendars.svg)](https://circleci.com/gh/pinax/pinax-calendars)
 [![Codecov](https://img.shields.io/codecov/c/github/pinax/pinax-calendars.svg)](https://codecov.io/gh/pinax/pinax-calendars)
