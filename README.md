@@ -71,37 +71,39 @@ Add `pinax.calendars` to your `INSTALLED_APPS` setting:
 
 ## Usage
 
-Using `pinax-calendars` is a combination of setting up at least view that can
-paginate through months, adapting a queryset of date based data, and using a
+Using `pinax-calendars` is a combination of setting up a view that can
+paginate through months, adapting a queryset of date-based data, and using a
 template tag.
 
-The end result is to render a month based view of all your events.
+The end result is to render a month-based view of all your events.
 
 Example:
 
-    {% load pinax_calendars_tags %}
+```django
+{% load pinax_calendars_tags %}
 
-    ...
-
-    {% calendar events %}
+{% calendar events %}
+```
 
 where ``events`` implements the following protocol:
 
-``events.day_url(year, month, day, has_event, **kwargs)``
-  return a link to the page for the given day or None if there is not to
-  be a day link. ``has_event`` is a boolean telling this method whether
-  there is an event on the day or not so you can choose whether a day
-  without an event should link or not.
+#### `events.day_url(year, month, day, has_event, **kwargs)`
 
-``events.month_url(year, month, **kwargs)``
-  return a link to the page for the given month or None if there is not
-  to be a month link.
+Returns a link to the page for the given day or None.
+`has_event` is a boolean telling this method whether
+there is an event on the day or not so you can choose whether a day
+without an event should link or not.
 
-``events_by_day(year, month, **kwargs)``
-  return a dictionary mapping day number to a list of events on that day.
+#### `events.month_url(year, month, **kwargs)`
 
-Note that all methods take additional key-word arguments that can be used in
-the calculation of the return value.
+Returns a link to the page for the given month or None.
+
+#### `events_by_day(year, month, **kwargs)`
+
+Returns a dictionary mapping day number to a list of events on that day.
+
+Note that all methods take additional keyword arguments used for
+calculating the return value.
 
 ### View Mixins
 
@@ -190,7 +192,7 @@ that timezone for the purposes of displaying the current month.
 
 Example:
 
-```djangotemplate
+```django
 {% load pinax_calendars_tags %}
 
 {% block body %}
