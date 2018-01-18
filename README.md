@@ -36,13 +36,13 @@ Django apps, themes, and starter project templates. This collection can be found
 
 ### Overview
 
-``pinax-calendars``, formerly named `kairios` provides utilities for publishing events as a calendar.
+`pinax-calendars`, formerly named `kairios` provides utilities for publishing events as a calendar.
 
 At the moment, it just provides a visual calendar (both large and small)
 showing which days have events and optionally linking to a day detail page.
 
-There is a `demo project` https://github.com/pinax/pinax-calendars-demo/ that
-you can clone and run to see it in action.
+There is a [demo project](https://github.com/pinax/pinax-calendars-demo/) that
+you can clone and run to see pinax-calendars in action.
 
 #### Supported Django and Python versions
 
@@ -56,8 +56,8 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 Install the package:
 
-```commandline
-    $ pip install pinax-calendars
+```shell
+$ pip install pinax-calendars
 ```
 
 Add `pinax.calendars` to your `INSTALLED_APPS` setting:
@@ -85,7 +85,7 @@ Example:
 {% calendar events %}
 ```
 
-where ``events`` implements the following protocol:
+where `events` implements the following protocol:
 
 #### `events.day_url(year, month, day, has_event, **kwargs)`
 
