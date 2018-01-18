@@ -77,6 +77,32 @@ template tag.
 
 The end result is to render a month based view of all your events.
 
+Example:
+
+    {% load pinax_calendars_tags %}
+
+    ...
+
+    {% calendar events %}
+
+where ``events`` implements the following protocol:
+
+``events.day_url(year, month, day, has_event, **kwargs)``
+  return a link to the page for the given day or None if there is not to
+  be a day link. ``has_event`` is a boolean telling this method whether
+  there is an event on the day or not so you can choose whether a day
+  without an event should link or not.
+
+``events.month_url(year, month, **kwargs)``
+  return a link to the page for the given month or None if there is not
+  to be a month link.
+
+``events_by_day(year, month, **kwargs)``
+  return a dictionary mapping day number to a list of events on that day.
+
+Note that all methods take additional key-word arguments that can be used in
+the calculation of the return value.
+
 ### View Mixins
 
 There are two mixins to make it easier to write monthly (`pinax.calendars.mixins.MonthlyMixin`)
@@ -129,38 +155,6 @@ The adapter is providing three functions:
 All three methods receive extra `kwargs` that are passed directly from the
 template tag in case you need to do something custom in your site's integration
 of `pinax-calendars`.
-
-<!--
-Usage
------
-
-::
-
-    {% load pinax_calendars_tags %}
-
-    ...
-
-    {% calendar events %}
-
-
-where ``events`` implements the following protocol:
-
-``events.day_url(year, month, day, has_event, **kwargs)``
-  return a link to the page for the given day or None if there is not to
-  be a day link. ``has_event`` is a boolean telling this method whether
-  there is an event on the day or not so you can choose whether a day
-  without an event should link or not.
-
-``events.month_url(year, month, **kwargs)``
-  return a link to the page for the given month or None if there is not
-  to be a month link.
-
-``events_by_day(year, month, **kwargs)``
-  return a dictionary mapping day number to a list of events on that day.
-
-Note that all methods take additional key-word arguments that can be used in
-the calculation of the return value.
--->
 
 #### Daily URL
 
