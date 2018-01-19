@@ -13,6 +13,7 @@
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+
 ## Table of Contents
 
 * [About Pinax](#about-pinax)
@@ -20,17 +21,25 @@
   * [Features](#features)
   * [Supported Django and Python versions](#supported-django-and-python-versions)
 * [Documentation](#documentation)
+  * [Installation](#installation)
   * [Usage](#usage)
+  * [View Mixins](#view-mixins)
+  * [Event Queryset Adapter](#event-queryset-adapter)
+  * [Template Tag](#template-tag)
+  * [Template Include](#template-include)
+  * [Style](#style)  
 * [Change Log](#change-log)
 * [Contribute](#contribute)
 * [Code of Conduct](#code-of-conduct)
 * [Connect with Pinax](#connect-with-pinax)
 * [License](#license)
 
+
 ## About Pinax
 
 Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable
 Django apps, themes, and starter project templates. This collection can be found at http://pinaxproject.com.
+
 
 ## pinax-calendars
 
@@ -54,6 +63,8 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 ## Documentation
 
+### Installation
+
 Install the package:
 
 ```shell
@@ -69,7 +80,7 @@ Add `pinax.calendars` to your `INSTALLED_APPS` setting:
     ]
 ```
 
-## Usage
+### Usage
 
 Using `pinax-calendars` is a combination of setting up a view that can
 paginate through months, adapting a queryset of date-based data, and using a
@@ -110,7 +121,7 @@ calculating the return value.
 There are two mixins to make it easier to write monthly (`pinax.calendars.mixins.MonthlyMixin`)
 and daily (`pinax.calendars.mixins.DailyMixin`) views.
 
-### Monthly Mixin
+#### Monthly Mixin
 
 The `MonthlyMixin` will add `month_kwarg_name` and `year_kwarg_name` properties
 to the view and default to `"month"` and `"year"` respectively. These should be set
@@ -128,7 +139,7 @@ This `date` property can then be used in your view to pass to the template
 context as the `{% calendars %}` template tag will need the date you are
 viewing.
 
-### Daily Mixin
+#### Daily Mixin
 
 The `DailyMixin` will add `month_kwarg_name`, `year_kwarg_name`, and `day_kwargs_name`
 properties to the view and default to `"month"`, `"year"`, `"day"` respectively.
@@ -180,7 +191,6 @@ property, which defaults to `"date"`, to filter the `self.queryset` by `year`
 and `month` (e.g. `date__year=year, date__month=month`).
 
 It will then collect events into date buckets and return a dictionary of lists.
-
 
 ### Template Tag
 
@@ -277,21 +287,17 @@ day.
 * Add PyPi-compatible long description
 * Move documentation to README.md
 
-
 ### 1.1.0
 
 * Added timezone support for calendar [PR #5](https://github.com/pinax/pinax-calendars/pull/5)
-
 
 ### 1.0.0
 
 * Added docs
 
-
 ### 0.6
 
 * Added `adapters.py` and `mixins.py`
-
 
 ### 0.5
 
@@ -311,6 +317,7 @@ and ping us there instead of creating an issue on GitHub. Creating issues on Git
 also valid but we are usually able to help you faster if you ping us in Slack.
 
 We also highly recommend reading our blog post on [Open Source and Self-Care](http://blog.pinaxproject.com/2016/01/19/open-source-and-self-care/).
+
 
 ## Code of Conduct
 
