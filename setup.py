@@ -36,7 +36,6 @@ Pinax Calendars
 
 ``pinax-calendars`` provides utilities for publishing events as a calendar.
 
-
 Supported Django and Python Versions
 ------------------------------------
 
