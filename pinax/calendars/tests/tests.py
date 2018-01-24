@@ -1,11 +1,11 @@
 import datetime
 
-from django.test import TestCase
 from django.db import models
+from django.test import TestCase
 from django.urls import reverse
 
-from pinax.calendars.templatetags.pinax_calendars_tags import calendar, delta
 from pinax.calendars.adapters import EventAdapter
+from pinax.calendars.templatetags.pinax_calendars_tags import calendar, delta
 
 
 class EventModel(models.Model):
