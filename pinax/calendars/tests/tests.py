@@ -34,6 +34,6 @@ class Tests(TestCase):
         events = EventAdapter(EventModel.objects.none())
 
         context = {}
-        cal = calendar(context, events, datetime.datetime(2017,2,1))
+        cal = calendar(context, events, datetime.datetime(2017, 2, 1))
         self.assertEqual(cal["prev"], reverse("monthly", args=[2017, 1]))
         self.assertEqual(cal["next"], reverse("monthly", args=[2017, 3]))
