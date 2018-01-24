@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 import pytz
 

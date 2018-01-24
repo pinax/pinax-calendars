@@ -1,6 +1,15 @@
-from django.test import TestCase
+import datetime
 
-from pinax.calendars.templatetags.pinax_calendars_tags import delta
+from django.test import TestCase
+from django.db import models
+from django.urls import reverse
+
+from pinax.calendars.templatetags.pinax_calendars_tags import calendar, delta
+from pinax.calendars.adapters import EventAdapter
+
+
+class EventModel(models.Model):
+    date = models.DateTimeField()
 
 
 class Tests(TestCase):
@@ -20,3 +29,11 @@ class Tests(TestCase):
         """
         self.assertEqual(delta(2016, 2, 1), (2016, 3))
         self.assertEqual(delta(2015, 12, 1), (2016, 1))
+
+    def test_calendar_prev_next(self):
+        events = EventAdapter(EventModel.objects.none())
+
+        context = {}
+        cal = calendar(context, events, datetime.datetime(2017,2,1))
+        self.assertEqual(cal["prev"], reverse("monthly", args=[2017, 1]))
+        self.assertEqual(cal["next"], reverse("monthly", args=[2017, 3]))

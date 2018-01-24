@@ -268,6 +268,11 @@ day.
 
 ## Change Log
 
+### 2.0.3
+
+* fix `reverse` import
+* add tests
+
 ### 2.0.2
 
 * Update requirements, add django>=1.11
