@@ -267,13 +267,12 @@ div.calendar
 ### Style
 
 If you use pinax-templates `calendar.html` template, you can add
-this bit of LESS to your project (if you are building upon Bootstrap)
+this bit of SCSS to your project (if you are building upon Bootstrap)
 to render a full width monthly calendar with responsive squares for each day:
 
-```less
+```scss
 .calendar-table {
-    .table;
-    .table-bordered;
+    @extend table;
     td {
         width: 14.2vw;
         height: 14.2vmin;
