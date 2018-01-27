@@ -26,7 +26,7 @@
   * [View Mixins](#view-mixins)
   * [Event Queryset Adapter](#event-queryset-adapter)
   * [Template Tag](#template-tag)
-  * [Template Include](#template-include)
+  * [Templates](#templates)
   * [Style](#style)  
 * [Change Log](#change-log)
 * [Contribute](#contribute)
@@ -210,15 +210,34 @@ Example:
 {% endblock %}
 ```
 
-### Template Include
+### Templates
 
-We ship a [template include fragment](https://github.com/pinax/pinax-calendars/blob/master/pinax/calendars/templates/pinax/calendars/calendar.html)
-that the tag will render and include wherever you place the tag. It uses semantic
-markup to make styling it easy and free from any framework bias (as much as
-possible, at least).
+Default templates are provided by the `pinax-templates` app in the
+[calendars](https://github.com/pinax/pinax-templates/tree/master/pinax/templates/templates/pinax/calendars)
+section of that project.
 
-The template path, in case you want to override it, is at
-`pinax/calendars/calendar.html`.
+Reference pinax-templates
+[installation instructions](https://github.com/pinax/pinax-templates/blob/master/README.md#installation)
+to include these templates in your project.
+
+View live `pinax-templates` examples and source at [Pinax Templates](https://templates.pinaxproject.com/)!
+
+##### Customizing Templates
+
+Override the default `pinax-templates` templates by copying them into your project
+subdirectory `pinax/calendars/` on the template path and modifying as needed.
+
+For example if your project doesn't use Bootstrap, copy the desired templates
+then remove Bootstrap and Font Awesome class names from your copies.
+Remove class references like `class="btn btn-success"` and `class="icon icon-pencil"` as well as
+`bootstrap` from the `{% load i18n bootstrap %}` statement.
+Since `bootstrap` template tags and filters are no longer loaded, you'll also need to update
+`{{ form|bootstrap }}` to `{{ form }}` since the "bootstrap" filter is no longer available.
+
+##### `calendar.html`
+
+Rendered by the `{% calendar %}` template tag. The template uses semantic
+markup to make styling easy and relatively free of framework bias.
 
 The entire block is wrapped in a `div.calendar`, there is a header with some
 nav, followed by a table (`table.calendar-table` for which there is a bit of
@@ -247,9 +266,9 @@ div.calendar
 
 ### Style
 
-If you use the included template that the `{% calendar %}` tag includes as-is,
-then you can add this bit of LESS to your project if you are building upon
-Bootstrap:
+If you use pinax-templates `calendar.html` template, you can add
+this bit of LESS to your project (if you are building upon Bootstrap)
+to render a full width monthly calendar with responsive squares for each day:
 
 ```less
 .calendar-table {
@@ -262,11 +281,12 @@ Bootstrap:
 }
 ```
 
-This will render a full width monthly calendar with responsive squares for each
-day.
-
 
 ## Change Log
+
+### 2.0.4
+
+* Remove local template in favor of pinax-templates
 
 ### 2.0.3
 

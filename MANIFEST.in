@@ -1,5 +1,3 @@
 include AUTHORS
 include LICENSE
 include README.md
-recursive-include pinax/calendars/static *
-recursive-include pinax/calendars/templates *
