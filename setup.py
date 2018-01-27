@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-VERSION = "2.0.3"
+VERSION = "2.0.4"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-calendars.svg
     :target: https://pypi.python.org/pypi/pinax-calendars/
