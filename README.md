@@ -220,7 +220,7 @@ Reference pinax-templates
 [installation instructions](https://github.com/pinax/pinax-templates/blob/master/README.md#installation)
 to include these templates in your project.
 
-View live `pinax-templates` examples and source at [Pinax Templates](https://templates.pinaxproject.com/)!
+View live `pinax-templates` examples and source at [Pinax Templates](https://templates.pinaxproject.com/calendars/templatetags/)!
 
 ##### Customizing Templates
 
