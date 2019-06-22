@@ -6,9 +6,9 @@
 
 [![CircleCI](https://img.shields.io/circleci/project/github/pinax/pinax-calendars.svg)](https://circleci.com/gh/pinax/pinax-calendars)
 [![Codecov](https://img.shields.io/codecov/c/github/pinax/pinax-calendars.svg)](https://codecov.io/gh/pinax/pinax-calendars)
-![](https://img.shields.io/github/contributors/pinax/pinax-calendars.svg)
-![](https://img.shields.io/github/issues-pr/pinax/pinax-calendars.svg)
-![](https://img.shields.io/github/issues-pr-closed/pinax/pinax-calendars.svg)
+[![](https://img.shields.io/github/contributors/pinax/pinax-calendars.svg)](https://github.com/pinax/pinax-calendars/graphs/contributors)
+[![](https://img.shields.io/github/issues-pr/pinax/pinax-calendars.svg)](https://github.com/pinax/pinax-calendars/pulls)
+[![](https://img.shields.io/github/issues-pr-closed/pinax/pinax-calendars.svg)](https://github.com/pinax/pinax-calendars/pulls?q=is%3Apr+is%3Aclosed)
   
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
