@@ -221,7 +221,7 @@ to include these templates in your project.
 
 View live `pinax-templates` examples and source at [Pinax Templates](https://templates.pinaxproject.com/calendars/templatetags/)!
 
-##### Customizing Templates
+#### Customizing Templates
 
 Override the default `pinax-templates` templates by copying them into your project
 subdirectory `pinax/calendars/` on the template path and modifying as needed.
@@ -233,7 +233,7 @@ Remove class references like `class="btn btn-success"` and `class="icon icon-pen
 Since `bootstrap` template tags and filters are no longer loaded, you'll also need to update
 `{{ form|bootstrap }}` to `{{ form }}` since the "bootstrap" filter is no longer available.
 
-##### `calendar.html`
+#### `calendar.html`
 
 Rendered by the `{% calendar %}` template tag. The template uses semantic
 markup to make styling easy and relatively free of framework bias.
