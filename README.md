@@ -64,10 +64,10 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 ### Installation
 
-Install the package:
+To install pinax-calendars:
 
 ```shell
-$ pip install pinax-calendars
+    $ pip install pinax-calendars
 ```
 
 Add `pinax.calendars` to your `INSTALLED_APPS` setting:
