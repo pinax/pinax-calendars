@@ -5,7 +5,7 @@ from django.urls import reverse
 import pytz
 
 
-class EventAdapter(object):
+class EventAdapter:
     day_url_name = "daily"
     month_url_name = "monthly"
     date_field_name = "date"

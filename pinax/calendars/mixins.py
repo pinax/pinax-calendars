@@ -3,7 +3,7 @@ import datetime
 from django.utils import timezone
 
 
-class DailyMixin(object):
+class DailyMixin:
 
     month_kwarg_name = "month"
     year_kwarg_name = "year"
@@ -18,10 +18,10 @@ class DailyMixin(object):
             month=int(self.month),
             day=int(self.day)
         )
-        return super(DailyMixin, self).dispatch(request, *args, **kwargs)
+        return super().dispatch(request, *args, **kwargs)
 
 
-class MonthlyMixin(object):
+class MonthlyMixin:
 
     month_kwarg_name = "month"
     year_kwarg_name = "year"
@@ -37,4 +37,4 @@ class MonthlyMixin(object):
             )
         else:
             self.date = timezone.now().date()
-        return super(MonthlyMixin, self).dispatch(request, *args, **kwargs)
+        return super().dispatch(request, *args, **kwargs)
