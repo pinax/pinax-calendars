@@ -9,7 +9,7 @@
 [![](https://img.shields.io/github/contributors/pinax/pinax-calendars.svg)](https://github.com/pinax/pinax-calendars/graphs/contributors)
 [![](https://img.shields.io/github/issues-pr/pinax/pinax-calendars.svg)](https://github.com/pinax/pinax-calendars/pulls)
 [![](https://img.shields.io/github/issues-pr-closed/pinax/pinax-calendars.svg)](https://github.com/pinax/pinax-calendars/pulls?q=is%3Apr+is%3Aclosed)
-  
+
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -54,10 +54,11 @@ you can clone and run to see pinax-calendars in action.
 
 #### Supported Django and Python versions
 
-Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
---------------- | --- | --- | --- | ---
-1.11 |  *  |  *  |  *  |  *  
-2.0  |     |  *  |  *  |  *
+Django \ Python | 3.6 | 3.7 | 3.8
+--------------- | --- | --- | ---
+1.11 |  *  |  *  |     
+2.2  |  *  |  *  |  *   
+3.0  |  *  |  *  |  * 
 
 
 ## Documentation
