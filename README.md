@@ -54,7 +54,7 @@ you can clone and run to see pinax-calendars in action.
 
 #### Supported Django and Python versions
 
-Django \ Python | 3.6 | 3.7 | 3.8
+Django / Python | 3.6 | 3.7 | 3.8
 --------------- | --- | --- | ---
 1.11 |  *  |  *  |     
 2.2  |  *  |  *  |  *   
@@ -283,6 +283,8 @@ to render a full width monthly calendar with responsive squares for each day:
 
 ## Change Log
 
+### 3.0.0
+
 ### 2.0.4
 
 * Remove local template in favor of pinax-templates
@@ -358,4 +360,4 @@ and check out our [Pinax Project blog](http://blog.pinaxproject.com).
 
 ## License
 
-Copyright (c) 2012-2019 James Tauber and contributors under the [MIT license](https://opensource.org/licenses/MIT).
+Copyright (c) 2012-present James Tauber and contributors under the [MIT license](https://opensource.org/licenses/MIT).
