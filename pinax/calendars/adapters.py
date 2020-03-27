@@ -23,8 +23,8 @@ class EventAdapter:
     def events_by_day(self, year, month, tz, **kwargs):
         days = defaultdict(list)
         query_args = {
-            "{}__year".format(self.date_field_name): year,
-            "{}__month".format(self.date_field_name): month
+            f"{self.date_field_name}__year": year,
+            f"{self.date_field_name}__month": month
         }
         timezone = pytz.timezone(tz) if tz else pytz.utc
         for event in self.events.filter(**query_args).order_by(self.date_field_name):
