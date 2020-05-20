@@ -39,7 +39,7 @@ def calendar(context, events, date=None, tz=None, **kwargs):
 
     events_by_day = events.events_by_day(date.year, date.month, tz, **kwargs)
 
-    title = "%s %s" % (cal.month_name[date.month], date.year)
+    title = f"{cal.month_name[date.month]} {date.year}"
 
     matrix = cal.monthcalendar(date.year, date.month)
     grid = []
